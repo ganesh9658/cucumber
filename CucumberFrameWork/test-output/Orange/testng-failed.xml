@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Orange]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.Listener"/>
+    <listener class-name="utilities.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Orange(failed)">
+    <classes>
+      <class name="page.OrangeLoginPage">
+        <methods>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- page.OrangeLoginPage -->
+      <class name="testcases.TimeTest">
+        <methods>
+          <include name="TimeTest"/>
+        </methods>
+      </class> <!-- testcases.TimeTest -->
+    </classes>
+  </test> <!-- Orange(failed) -->
+</suite> <!-- Failed suite [Orange] -->
